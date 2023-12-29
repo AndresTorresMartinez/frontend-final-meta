@@ -1,18 +1,22 @@
+import { Link } from 'react-router-dom';
+
 const Nav = () => {
   return (
     <>
-    <img ></img>
-      <ul>
+    <div className="navbar">
+      <img src="logoI.svg" alt="" className="logo" />
+      <ul className="nav-list">
         <li>
-          <a href="/home">Homepage</a>
+          <Link to="/">Homepage</Link>
         </li>
         <li>
-          <a href="/about">About Us</a>
+          <Link to="/about">About Us</Link>
         </li>
         <li>
-          <a href="/blog">Reserve</a>
+          <Link to="/reservation">Reserve</Link>
         </li>
       </ul>
+    </div>
     </>
   );
 };
