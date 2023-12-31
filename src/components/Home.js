@@ -1,16 +1,14 @@
-// Home.js
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <>
-      <section className="banner" style={{ backgroundImage: 'paella.png")' }}>
-        <h1>Welcome to Our Restaurant</h1>
-        <p>Discover a world of flavors with our exquisite dishes.</p>
+      <section className="banner" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("paella.png")' }}>
+      <h1 style={{ color: 'white' }}>Welcome to Our Restaurant</h1>
+        <p style={{ color: 'white' }}>Discover a world of flavors with our exquisite dishes.</p>
         <Link to="/reservation">
-          <button>Make a Reservation</button>
+          <button aria-label="Make a Reservation">Make a Reservation</button>
         </Link>
       </section>
 

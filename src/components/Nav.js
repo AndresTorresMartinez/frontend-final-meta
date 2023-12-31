@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <>
-    <div className="navbar">
+    <nav className="navbar">
       <img src="logoI.svg" alt="" className="logo" />
       <ul className="nav-list">
         <li>
@@ -16,8 +15,7 @@ const Nav = () => {
           <Link to="/reservation">Reserve</Link>
         </li>
       </ul>
-    </div>
-    </>
+    </nav>
   );
 };
 
