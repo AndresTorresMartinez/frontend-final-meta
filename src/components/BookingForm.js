@@ -20,8 +20,8 @@ const BookingForm = ({ onReservation }) => {
   };
 
   const generateTimeOptions = () => {
-    const startTime = 17; // Hora de inicio (5:00 PM)
-    const endTime = 22;   // Hora de fin (10:00 PM)
+    const startTime = 17; 
+    const endTime = 22;  
     const options = [];
 
     for (let hour = startTime; hour <= endTime; hour++) {

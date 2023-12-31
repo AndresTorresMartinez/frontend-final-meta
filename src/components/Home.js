@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <>
-      {/* Sección del Plato del Día */}
-      <section className="banner">
+      <section className="banner" style={{ backgroundImage: 'paella.png")' }}>
         <h1>Welcome to Our Restaurant</h1>
         <p>Discover a world of flavors with our exquisite dishes.</p>
         <Link to="/reservation">
@@ -21,7 +20,6 @@ const Home = () => {
         <p>Available for a limited time. Don't miss out!</p>
       </section>
 
-      {/* Sección de Platos de Muestra */}
       <section>
         <h2>Featured Dishes</h2>
         <div className="dish-cards">
@@ -35,11 +33,9 @@ const Home = () => {
             <h3>Ratatouille</h3>
             <p>A French Provençal stewed vegetable dish, originating in Nice.</p>
           </div>
-          {/* Agrega más tarjetas según sea necesario */}
         </div>
       </section>
 
-      {/* Sección de Testimonios de Usuarios */}
       <section>
         <h2>User Testimonials</h2>
         <div className="testimonial-cards">
@@ -51,7 +47,6 @@ const Home = () => {
             <p>"Great service and delicious dishes. Highly recommend!"</p>
             <p>- John Smith</p>
           </div>
-          {/* Agrega más tarjetas de testimonios según sea necesario */}
         </div>
       </section>
     </>
