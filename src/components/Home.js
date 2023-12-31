@@ -1,11 +1,20 @@
 // Home.js
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div>
+    <>
       {/* Sección del Plato del Día */}
+      <section className="banner">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Discover a world of flavors with our exquisite dishes.</p>
+        <Link to="/reservation">
+          <button>Make a Reservation</button>
+        </Link>
+      </section>
+
       <section>
         <h2>Special Dish of the Day</h2>
         <p>Today's featured dish: Grilled Salmon with Lemon Herb Sauce</p>
@@ -45,7 +54,7 @@ const Home = () => {
           {/* Agrega más tarjetas de testimonios según sea necesario */}
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
